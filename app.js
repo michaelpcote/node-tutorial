@@ -10,8 +10,8 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
-app.get('/hides', hide.index);
-app.post('/add_hide', hide.add_hike);
+app.get('/hikes', hike.index);
+app.post('/add_hike', hike.add_hike);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
