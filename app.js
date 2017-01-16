@@ -1,5 +1,6 @@
 var express = require('express');
 var path = require('path');
+var hike = require('./routes/hike');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
@@ -9,6 +10,8 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
+app.get('/hides', hide.index);
+app.post('/add_hide', hide.add_hike);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
