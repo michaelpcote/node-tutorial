@@ -5,6 +5,10 @@
 
 }
 
+section-head {
+    padding-bottom: 30px;
+}
+
 .navbar {
     margin-bottom: 0px;
     padding: 30px 15px;
@@ -69,7 +73,7 @@
 @media (max-width: 1024px){
     .fixed-attachment {
         background-attachment: scroll;
-    }	
+    }
 }
 
 .text-banner {
@@ -102,7 +106,7 @@
 footer {
     background-color: #333;
     color: #ddd;
-    padding: 20px;
+    padding: 50px;
     text-align: center;
 }
 
@@ -195,9 +199,9 @@ article p {
 }
 
 
-/* The following code is used to create same-sized columns 
+/* The following code is used to create same-sized columns
    in a multi-column layout.
-   Code from:  
+   Code from:
    http://www.minimit.com/articles/solutions-tutorials/bootstrap-3-responsive-columns-of-same-height
 */
 /* columns of same height styles */
