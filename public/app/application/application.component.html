@@ -1,0 +1,210 @@
+<div class="text-banner">
+    <div class="section-head">
+        <h1>Application</h1>
+        <p>The STEAM Discovery Academy requires students to apply for the various courses. Students are accepted based on age,
+            interest and availability of the course. Students are notified of acceptance on April 12th, 2017.
+            <strong>The application deadline is April 7, 2017</strong>.
+        </p>
+        <p>Please complete the following application form. In addition to the completed form below an application must be accompanied
+            by a student’s personal statement or teacher recommendation and a $25 application fee. If accepted the application
+            fee is deducted from the total tuition. If not accepted deposit is returned.
+        </p>
+        <p>Upon being accepted we will provide a registration form and payment deadline.</p>
+    </div>
+</div>
+<hr>
+<form (ngSubmit)="submit()" [formGroup]="applicationForm" class="form-horizontal" id="applicationForm" novalidate>
+    <fieldset>
+        <div class="col-sm-6">
+            <div class="form-group" [ngClass]="{'has-error': (applicationForm.get('parentFirstName').touched || 
+                            applicationForm.get('parentFirstName').dirty) && 
+                            !applicationForm.get('parentFirstName').valid }">
+                <label for="parentFirstNameId" class="col-sm-4 control-label">Parent/Guardian First Name</label>
+                <div class="col-sm-8">
+                    <input class="form-control" formControlName="parentFirstName" type="text" id="parentFirstNameId" placeholder="First Name (required)"
+                    />
+                    <span class="help-block" *ngIf="(applicationForm.get('parentFirstName').touched || 
+                                                         applicationForm.get('parentFirstName').dirty) && 
+                                                         applicationForm.get('parentFirstName').errors">
+                        <span *ngIf="applicationForm.get('parentFirstName').errors.required">
+                                Please enter your first name.
+                            </span>
+                        </span>
+                </div>
+        </div>
+        <div class="form-group" [ngClass]="{'has-error': (applicationForm.get('parentLastName').touched || applicationForm.get('parentLastName').dirty) && !applicationForm.get('parentLastName').valid }">
+            <label for="parentLastNameId" class="control-label col-sm-4">Parent/Guardian First Name</label>
+            <div class="col-sm-8">
+                <input class="form-control" formControlName="parentLastName" type="text" id="parentLastNameId" placeholder="Last Name (required)"
+                />
+                <span class="help-block" *ngIf="(applicationForm.get('parentLastName').touched || 
+                                                         applicationForm.get('parentLastName').dirty) && 
+                                                         applicationForm.get('parentLastName').errors">
+                    <span *ngIf="applicationForm.get('parentLastName').errors.required">
+                                Please enter your last name.
+                            </span>
+                    </span>
+            </div>
+        </div>
+        <div class="form-group" [ngClass]="{'has-error': (applicationForm.get('parentEmail').touched || applicationForm.get('parentEmail').dirty) && !applicationForm.get('parentEmail').valid }">
+            <label for="parentEmailId" class="control-label col-sm-4">Parent/Guardian Email</label>
+            <div class="col-sm-8">
+                <input class="form-control" formControlName="parentEmail" type="text" id="parentEmailId" placeholder="Email (required)" />
+                <span class="help-block" *ngIf="(applicationForm.get('parentEmail').touched || 
+                                                         applicationForm.get('parentEmail').dirty) && 
+                                                         applicationForm.get('parentEmail').errors">
+                    <span *ngIf="applicationForm.get('parentEmail').errors.required">
+                                    Please enter your email.
+                        </span>
+                    <span *ngIf="applicationForm.get('parentEmail').errors.pattern">
+                            Please enter a valid email.
+                        </span>
+                    </span>
+            </div>
+        </div>
+        <div class="form-group" [ngClass]="{'has-error': (applicationForm.get('parentPhone').touched || applicationForm.get('parentPhone').dirty) && !applicationForm.get('parentPhone').valid }">
+            <label for="parentPhoneId" class="control-label col-sm-4">Parent/Guardian Phone</label>
+            <div class="col-sm-8">
+                <input class="form-control" formControlName="parentPhone" type="text" id="parentPhoneId" placeholder="Phone Number (required)"
+                />
+                <span class="help-block" *ngIf="(applicationForm.get('parentPhone').touched || 
+                                                         applicationForm.get('parentPhone').dirty) && 
+                                                         applicationForm.get('parentPhone').errors">
+                    <span *ngIf="applicationForm.get('parentPhone').errors.required">
+                                Please enter your phone number.
+                            </span>
+                    </span>
+            </div>
+        </div>
+        <div formArrayName="child" *ngFor="let ch of child.controls; let i = index;" class="panel panel-default">
+            <div class="panel-heading">
+                <span>Child {{i + 1}} - {{ch.childFirstName}}</span>
+                <span class="glyphicon glyphicon-remove pull-right" (click)="removeChild(j)"></span>
+            </div>                
+            <div [formGroupName]="i" class="panel-body">
+                <div class="form-group" [ngClass]="{'has-error': (applicationForm.controls.child.controls[i].controls.childFirstName.touched || applicationForm.controls.child.controls[i].controls.childFirstName.dirty) && !applicationForm.controls.child.controls[i].controls.childFirstName.valid }">
+                    <label for="childFirstNameId" class="control-label col-sm-4">Child's First Name</label>
+                    <div class="col-sm-8">
+                        <input class="form-control" formControlName="childFirstName" type="text" id="childFirstNameId" placeholder="Child's First Name (required)"
+                        />
+                        <span class="help-block" *ngIf="(applicationForm.controls.child.controls[i].controls.childFirstName.touched || 
+                                                                applicationForm.controls.child.controls[i].controls.childFirstName.dirty) && 
+                                                                applicationForm.controls.child.controls[i].controls.childFirstName.errors">
+                            <span *ngIf="applicationForm.controls.child.controls[i].controls.childFirstName.errors.required">
+                                        Please enter your child's first name.
+                                    </span>
+                            </span>
+                    </div>
+                </div>
+                <div class="form-group" [ngClass]="{'has-error': (applicationForm.controls.child.controls[i].controls.childLastName.touched || applicationForm.controls.child.controls[i].controls.childLastName.dirty) && !applicationForm.controls.child.controls[i].controls.childLastName.valid }">
+                    <label for="childLastNameId" class="control-label col-sm-4">Child's Last Name</label>
+                    <div class="col-sm-8">
+                        <input class="form-control" formControlName="childLastName" type="text" id="childLastNameId" placeholder="Last Name (required)"
+                        />
+                        <span class="help-block" *ngIf="(applicationForm.controls.child.controls[i].controls.childLastName.touched || 
+                                                                applicationForm.controls.child.controls[i].controls.childLastName.dirty) && 
+                                                                applicationForm.controls.child.controls[i].controls.childLastName.errors">
+                            <span *ngIf="applicationForm.controls.child.controls[i].controls.childLastName.errors.required">
+                                        Please enter your child's last name.
+                                    </span>
+                            </span>
+                    </div>
+                </div>
+                <div class="form-group" [ngClass]="{'has-error': (applicationForm.controls.child.controls[i].controls.personalStatement.touched || applicationForm.controls.child.controls[i].controls.personalStatement.dirty) && !applicationForm.controls.child.controls[i].controls.personalStatement.valid }">
+                    <label for="personalStatementId" class="control-label col-sm-4">Personal Statement</label>
+                    <div class="col-sm-8">
+                        <input class="form-control" formControlName="personalStatement" type="text" id="personalStatementId" placeholder="Personal Statement (required)"
+                        />
+                        <span class="help-block" *ngIf="(applicationForm.controls.child.controls[i].controls.personalStatement.touched || 
+                                                                applicationForm.controls.child.controls[i].controls.personalStatement.dirty) && 
+                                                                applicationForm.controls.child.controls[i].controls.personalStatement.errors">
+                            <span *ngIf="applicationForm.controls.child.controls[i].controls.personalStatement.errors.required">
+                                        Please enter your personal statement.
+                                    </span>
+                            </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-5 col-xs-offset-1"*ngIf="child.valid">
+            <a (click)="addChild()" style="cursor: default">Add another child +
+            </a>
+        </div>
+        
+        </div>
+        <div class="col-sm-6">
+            <div formArrayName="classArray" *ngFor="let class of classArray.controls; let j = index;" class="panel panel-default">
+                <div class="panel-heading">
+                    <span>Class {{j + 1}}</span>
+                    <span class="glyphicon glyphicon-remove pull-right" (click)="removeClass(j)"></span>
+                </div>
+                <div [formGroupName]="j" class="panel-body">
+                    <div class="form-group" [ngClass]="{'has-error': (applicationForm.controls.classArray.controls[j].controls.gradeLevel.touched || applicationForm.controls.classArray.controls[j].controls.gradeLevel.dirty) && !applicationForm.controls.classArray.controls[j].controls.gradeLevel.valid }">
+                        <label attr.for="{{gradeLevelId + j}}" class="control-label col-sm-4">Grade Level</label>
+                        <div class="col-sm-8">
+                            <select class="form-control" formControlName="gradeLevel" id="{{gradeLevelId + j}}" (click)="selectionMade(j)" >
+                                    <option *ngFor="let gradeLevel of gradeLevels; let i = index;" value={{i}}>{{gradeLevel}}</option>
+                                </select>
+                            <span class="help-block" *ngIf="(applicationForm.controls.classArray.controls[j].controls.gradeLevel.touched || 
+                                                                    applicationForm.controls.classArray.controls[j].controls.gradeLevel.dirty) && 
+                                                                    applicationForm.controls.classArray.controls[j].controls.gradeLevel.errors">
+                                <span *ngIf="applicationForm.controls.classArray.controls[j].controls.gradeLevel.errors.required">
+                                            Please enter your child's grade level.
+                                        </span>
+                                </span>
+                        </div>
+                    </div>
+                    <div class="form-group" [ngClass]="{'has-error': (applicationForm.controls.classArray.controls[j].controls.classId.touched || applicationForm.controls.classArray.controls[j].controls.classId.dirty) && !applicationForm.controls.classArray.controls[j].controls.classId.valid }">
+                        <label attr.for="{{classSelectedId + j}}" class="control-label col-sm-4">Select a class</label>
+                        <div class="col-sm-8">
+                            <select class="form-control" formControlName="classId" id="{{classSelectedId + j}}" (click)="selectionMade(j)" >
+                                    <option *ngFor="let class of classes | classFilter: applicationForm.value.classArray[j].gradeLevel" [value]="class.classId">{{class.className}}</option>
+                                </select>
+                            <span class="help-block" *ngIf="(applicationForm.controls.classArray.controls[j].controls.classId.touched || 
+                                                                    applicationForm.controls.classArray.controls[j].controls.classId.dirty) && 
+                                                                    applicationForm.controls.classArray.controls[j].controls.classId.errors">
+                                <span *ngIf="applicationForm.controls.classArray.controls[j].controls.classId.errors.required">
+                                            Please select a class
+                                        </span>
+                                </span>
+                        </div>
+                    </div>
+                    <div class="form-group" [ngClass]="{'has-error': (applicationForm.controls.classArray.controls[j].controls.classWeek.touched || applicationForm.controls.classArray.controls[j].controls.classWeek.dirty) && !applicationForm.controls.classArray.controls[j].controls.classWeek.valid }">
+                        <label attr.for="{{classWeekId + j}}" class="control-label col-sm-4">Select a week</label>
+                        <div class="col-sm-8">
+                            <select class="form-control" formControlName="classWeek" id="{{classWeekId + j}}">
+                                    <option *ngFor="let week of weeks[j]" [value]="week">Week {{week}}</option>
+                                </select>
+                            <span class="help-block" *ngIf="(applicationForm.controls.classArray.controls[j].controls.classWeek.touched || 
+                                                                    applicationForm.controls.classArray.controls[j].controls.classWeek.dirty) && 
+                                                                    applicationForm.controls.classArray.controls[j].controls.classWeek.errors">
+                                <span *ngIf="applicationForm.controls.classArray.controls[j].controls.classWeek.errors.required">
+                                            Please select a week
+                                        </span>
+                                </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-5 col-xs-offset-1"*ngIf="classArray.valid">
+                <a (click)="addClass()" style="cursor: default">Add another class +
+                </a>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-8 col-sm-offset-2 pull-left">
+                <span>
+                        <button type="submit" value="Submit" class="btn btn-primary"
+                            [disabled] = "(!applicationForm.valid || applicationForm.value.classArray.length == 0 
+                                            || applicationForm.value.child.length == 0)"> Next
+                        </button>
+                    </span>
+            </div>
+        </div>
+    </fieldset>
+</form>
+<br>Dirty: {{ applicationForm.dirty }}
+<br>Touched: {{ applicationForm.touched }}
+<br>Valid: {{ applicationForm.valid }}
+<br>Value: {{ applicationForm.value | json }}
+<br>ClassArray: {{ !applicationForm.valid && applicationForm.value.classArray.length > 0}}

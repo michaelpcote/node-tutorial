@@ -1,0 +1,28 @@
+<div class="text-banner">
+    <div class="section-head">
+        <h1>Course List</h1>
+        <p>A complete list of classes available. This can be done with or without pictures. Just imagine a grid. 3 x X going
+            down. For smartphones it will be single column. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+            do eiusmod tempor incididunt ut labore et...
+        </p>
+    </div>
+</div>
+<hr>
+<form [formGroup]="classForm" class="form-horizontal" id="classForm" novalidate>
+    <fieldset>
+        <div class="form-group">
+            <label for="gradeLevelId" class="control-label col-sm-4">Filter classes by grade level</label>
+            <div class="col-sm-4">
+                <select class="form-control" formControlName="gradeLevel" id="gradeLevelId">
+                    <option *ngFor="let gradeLevel of gradeLevels; let i = index" value={{i}}>{{gradeLevel}}</option>
+                </select>                
+            </div>
+        </div> 
+    </fieldset>
+</form>
+<div *ngFor='let class of classes | classFilter: classForm.value.gradeLevel; let i = index;' class="activity-element col-md-4">
+    <div class="panel panel-default">
+        <div class="panel-heading">{{class.className}}</div>
+        <div class="panel-body">{{class.classDescription}}</div>
+    </div>
+</div>

@@ -1,0 +1,322 @@
+[
+    {
+        "classId" : "1",
+        "className": "Art of Theater",
+        "classDescription": "Investigate the arts and techniques needed to create a theatre performance and develop an appreciation of the art. Learn basic audience etiquette and compare technique and talent.",
+        "gradeLevel" : {
+            "second" : {
+                "weeksAvailable" : []
+            },
+            "fifth" : {
+                "weeksAvailable" : []
+            },
+            "nineth" : {
+                "weeksAvailable" : [3,4]
+            }
+        }
+    },
+    {
+        "classId" : "2",
+        "className": "Ceramics",
+        "classDescription": "Coil, throw, fire, stain, and glaze clay this summer. Detailed exploration of this medium will inspire young artists.",
+        "gradeLevel" : {
+            "second" : {
+                "weeksAvailable" : [2,4,6]
+            },
+            "fifth" : {
+                "weeksAvailable" : [2,4,6]
+            },
+            "nineth" : {
+                "weeksAvailable" : [2,4,6]
+            }
+        }
+    },
+    {
+        "classId" : "3",
+        "className": "Creative Writing",
+        "classDescription": "Establish a foundation for the rules of writing and techniques to break them. Challenge yourself through writing exercises encouraging you to put it on paper.",
+        "gradeLevel" : {
+            "second" : {
+                "weeksAvailable" : []
+            },
+            "fifth" : {
+                "weeksAvailable" : []
+            },
+            "nineth" : {
+                "weeksAvailable" : [2,4,6]
+            }
+        }
+    },
+    {
+        "classId" : "4",
+        "className": "Fashion and Design",
+        "classDescription": "Develop your passion fashion design, graphic design, trend spotting, styling and merchandising. Discover your talent to sketch fashion, draft patterns and analyze influential key figures in fashion design. ",
+        "gradeLevel" : {
+            "second" : {
+                "weeksAvailable" : []
+            },
+            "fifth" : {
+                "weeksAvailable" : []
+            },
+            "nineth" : {
+                "weeksAvailable" : [3,4]
+            }
+        }
+    },
+    {
+        "classId" : "5",
+        "className": "Film Production",
+        "classDescription": "Get a jump on a career in film production. This global industry is forecasting to rise to over $2 trillion over the next 3 years creating demand for educated and passionate filmmakers, editors, graphic artists and advertising executives. Gain industry insight and access to professional products in a real life production environment.",
+        "gradeLevel" : {
+            "second" : {
+                "weeksAvailable" : []
+            },
+            "fifth" : {
+                "weeksAvailable" : [2,4,6]
+            },
+            "nineth" : {
+                "weeksAvailable" : [2,4,6]
+            }
+        }
+    },
+    {
+        "classId" : "6",
+        "className": "Flight technology-rockets and drones",
+        "classDescription": "Learn how aeronautic pioneers such as the Wright Brothers and Elon Musk began and continue to achieve the unimaginable Leave this course with an understanding of the history of flight and first hand experience designing, building and launching various aircraft.",
+        "gradeLevel" : {
+            "second" : {
+                "weeksAvailable" : []
+            },
+            "fifth" : {
+                "weeksAvailable" : [2,4,6]
+            },
+            "nineth" : {
+                "weeksAvailable" : [2,4,6]
+            }
+        }
+    },
+    {
+        "classId" : "7",
+        "className": "Food Science",
+        "classDescription": "Establish a foundation of knowledge in culinary arts through exploring food science. Practice science techniques that allow for a successful and enjoyable meal.",
+        "gradeLevel" : {
+            "second" : {
+                "weeksAvailable" : [1,3,5]
+            },
+            "fifth" : {
+                "weeksAvailable" : [2,4,6]
+            },
+            "nineth" : {
+                "weeksAvailable" : [4,6]
+            }
+        }
+    },
+    {
+        "classId" : "8",
+        "className": "Forensics",
+        "classDescription": "Follow the evidence. Solve problems using forensic science to determine \"Who done it?\".",
+        "gradeLevel" : {
+            "second" : {
+                "weeksAvailable" : []
+            },
+            "fifth" : {
+                "weeksAvailable" : [1,3,5]
+            },
+            "nineth" : {
+                "weeksAvailable" : [1,3,5]
+            }
+        }
+    },
+    {
+        "classId" : "9",
+        "className": "Forestry",
+        "classDescription": "Take your curiosity to the next level and discover the importance of the forest. Uncover research techniques that drive management for wildlife and production.",
+        "gradeLevel" : {
+            "second" : {
+                "weeksAvailable" : [2,6]
+            },
+            "fifth" : {
+                "weeksAvailable" : [2,4,6]
+            },
+            "nineth" : {
+                "weeksAvailable" : [2,4,6]
+            }
+        }
+    },
+    {
+        "classId" : "10",
+        "className": "Gadgets and Gizmos",
+        "classDescription": "Experiment with radar guns, race solar cars and discover a variety of phenomena involved with speed, friction, gravity, electricity, magnetism and energy.",
+        "gradeLevel" : {
+            "second" : {
+                "weeksAvailable" : [2,4,6]
+            },
+            "fifth" : {
+                "weeksAvailable" : [2,4,6]
+            },
+            "nineth" : {
+                "weeksAvailable" : []
+            }
+        }
+    },
+    {
+        "classId" : "11",
+        "className": "Girls and Engineering",
+        "classDescription": "Girls Rule! Become inspired as a female engineer through engaging STEM (Science, Technology, Engineering and Math lessons. Students learn, design and build with various platforms such as Goldie Blocks to solve engineering puzzles. ",
+        "gradeLevel" : {
+            "second" : {
+                "weeksAvailable" : [1,2,3,4,5,6]
+            },
+            "fifth" : {
+                "weeksAvailable" : [1,2,3,4,5,6]
+            },
+            "nineth" : {
+                "weeksAvailable" : [1,2,3,4,5,6]
+            }
+        }
+    },
+    {
+        "classId" : "12",
+        "className": "Money Management",
+        "classDescription": "Build a foundation for managing your money. Learn tips and tools for managing your personal finances.",
+        "gradeLevel" : {
+            "second" : {
+                "weeksAvailable" : [2,4,6]
+            },
+            "fifth" : {
+                "weeksAvailable" : [1,3,5]
+            },
+            "nineth" : {
+                "weeksAvailable" : [1,3,5]
+            }
+        }
+    },
+    {
+        "classId" : "13",
+        "className": "Paint and mixed media",
+        "classDescription": "Bake, bleed, blend, cure, etch and gloss a masterpiece. Become familiar with skills and techniques used by professional artists whom work with paint.",
+        "gradeLevel" : {
+            "second" : {
+                "weeksAvailable" : [1,3,5]
+            },
+            "fifth" : {
+                "weeksAvailable" : [1,3,5]
+            },
+            "nineth" : {
+                "weeksAvailable" : [1,3,5]
+            }
+        }
+    },
+    {
+        "classId" : "14",
+        "className": "Photography",
+        "classDescription": "Build from the basics of composition and skills in order to produce quality images. Throughout the week learn about and engage with experts in a variety of professional photography fields. Leave with a portfolio of images and prints following a gallery opening.",
+        "gradeLevel" : {
+            "second" : {
+                "weeksAvailable" : [1,3,5]
+            },
+            "fifth" : {
+                "weeksAvailable" : [1,3,5]
+            },
+            "nineth" : {
+                "weeksAvailable" : [1,3,5]
+            }
+        }
+    },
+    {
+        "classId" : "15",
+        "className": "Public Speaking",
+        "classDescription": "Build your confidence and hone your speaking technique in front of an audience. Meet TEDx speakers to uncover their strategies for conquering the stage.",
+        "gradeLevel" : {
+            "second" : {
+                "weeksAvailable" : []
+            },
+            "fifth" : {
+                "weeksAvailable" : []
+            },
+            "nineth" : {
+                "weeksAvailable" : [2,3,4,5]
+            }
+        }
+    },
+    {
+        "classId" : "16",
+        "className": "Reading Advancement",
+        "classDescription": "Receive intensive reading instruction dedicated to individual needs.",
+        "gradeLevel" : {
+            "second" : {
+                "weeksAvailable" : [1,3,5]
+            },
+            "fifth" : {
+                "weeksAvailable" : [1,3,5]
+            },
+            "nineth" : {
+                "weeksAvailable" : []
+            }
+        }
+    },
+    {
+        "classId" : "17",
+        "className": "Robotics and Coding",
+        "classDescription": "Design, build and learn basic coding in order to complete challenge in the field of robotics.",
+        "gradeLevel" : {
+            "second" : {
+                "weeksAvailable" : []
+            },
+            "fifth" : {
+                "weeksAvailable" : [1,3,5]
+            },
+            "nineth" : {
+                "weeksAvailable" : [1,3,5]
+            }
+        }
+    },
+    {
+        "classId" : "18",
+        "className": "Science of Music",
+        "classDescription": "What is music? Explore the science of music and throughout your journey compose, mix, dance, experiment and listen.",
+        "gradeLevel" : {
+            "second" : {
+                "weeksAvailable" : [1,6]
+            },
+            "fifth" : {
+                "weeksAvailable" : [2,5]
+            },
+            "nineth" : {
+                "weeksAvailable" : []
+            }
+        }
+    },
+    {
+        "classId" : "19",
+        "className": "Service learning",
+        "classDescription": "Become part of a meaningful community by working closely with local organizations to help improve the lives around you. Earn valuable service hours and witness the excitement and appreciation of the smaller things in life. Feel Good!",
+        "gradeLevel" : {
+            "second" : {
+                "weeksAvailable" : []
+            },
+            "fifth" : {
+                "weeksAvailable" : []
+            },
+            "nineth" : {
+                "weeksAvailable" : [1,2,5,6]
+            }
+        }
+    },
+    {
+        "classId" : "20",
+        "className": "Tinkering and Entrepreneurship",
+        "classDescription": "Knowing, Making and Playing encourages success. Students learn to play better leading to entrepreneurship opportunities.",
+        "gradeLevel" : {
+            "second" : {
+                "weeksAvailable" : []
+            },
+            "fifth" : {
+                "weeksAvailable" : [1,2,6]
+            },
+            "nineth" : {
+                "weeksAvailable" : [1,2,6]
+            }
+        }
+    }
+]
